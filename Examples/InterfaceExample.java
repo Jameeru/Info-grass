@@ -5,7 +5,7 @@ interface MyInterface {
         System.out.println("Default method");
     }
 
-    static void staticMethod() {
+    static void staticMethod() {//Own Behaviour 
         System.out.println("Static method in interface");
     }
 }

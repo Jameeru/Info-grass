@@ -6,7 +6,7 @@ public class FinalVarExample {
 
     public static void main(String[] args) {
         FinalVarExample obj = new FinalVarExample();
-        // obj.value = 200; ❌ Error
+        // obj.value = 200; // Error
         System.out.println("Final value: " + obj.value);
     }
 }

@@ -1,7 +1,7 @@
 package Examples;
 
 enum ShirtSize {
-    SMALL, MEDIUM, LARGE, EXTRALARGE
+    SMALL, MEDIUM, LARGE, EXTRALARGE // placeholder for enum
 }
 
 public class EnumDemo {

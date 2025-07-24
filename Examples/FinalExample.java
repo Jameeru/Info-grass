@@ -6,11 +6,11 @@ final class FinalClass {
     }
 }
 
-// class Child extends FinalClass {} // 
+// cannot inherit from final FinalClass // 
 
 public class FinalExample {
     public static void main(String[] args) {
         new FinalClass().display();
     }
 }
-
+//coz main method creates instance of final class//

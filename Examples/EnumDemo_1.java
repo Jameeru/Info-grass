@@ -1,33 +1,39 @@
 package Examples;
 
-enum ShirtSize {
+enum PizzaSize {
     SMALL, MEDIUM, LARGE, EXTRALARGE
 }
 
 class PizzaOrder {
-    ShirtSize pizzaSize;  // Note: Using ShirtSize as a placeholder; adjust as needed
-    public PizzaOrder(ShirtSize pizzaSize) {
+    PizzaSize pizzaSize;
+
+    public PizzaOrder(PizzaSize pizzaSize) {
         this.pizzaSize = pizzaSize;
     }
+
     public void orderPizza() {
-        switch(pizzaSize) {
+        switch (pizzaSize) {
             case SMALL:
-                System.out.println("I ordered a small size pizza.");
+                System.out.println("I ordered a Small size pizza.");
                 break;
             case MEDIUM:
-                System.out.println("I ordered a medium size pizza.");
+                System.out.println("I ordered a Medium size pizza.");
+                break;
+            case LARGE:
+                System.out.println("I ordered a Large size pizza.");
+                break;
+            case EXTRALARGE:
+                System.out.println("I ordered an Extralarge size pizza.");
                 break;
             default:
                 System.out.println("I don't know which one to order.");
-                break;
         }
     }
 }
 
 public class EnumDemo_1 {
-
-      public static void main(String[] args) {
-        PizzaOrder order = new PizzaOrder(ShirtSize.MEDIUM);
+    public static void main(String[] args) {
+        PizzaOrder order = new PizzaOrder(PizzaSize.MEDIUM);
         order.orderPizza();
-      }
+    }
 }

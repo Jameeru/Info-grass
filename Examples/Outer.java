@@ -8,7 +8,7 @@ public class Outer {
     }
 
     public static void main(String[] args) {
-        Outer.Inner obj = new Outer.Inner();
-        obj.display();
+        Outer.Inner obj = new Outer.Inner();// No outer instance needed
+        obj.display();// Call method
     }
 }

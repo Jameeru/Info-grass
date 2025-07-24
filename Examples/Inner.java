@@ -8,9 +8,9 @@ public class Inner {
     }
 
     public static void main(String[] args) {
-        Inner outer = new Inner();
-        Inner.Nested inner = outer.new Nested();
-        inner.message();
+        Inner outer = new Inner();// Create outer class instance
+        Inner.Nested inner = outer.new Nested();// Use outer instance to create inner
+        inner.message();// Call method
     }
 }
 

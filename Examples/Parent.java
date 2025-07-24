@@ -7,6 +7,6 @@ class Parent {
 }
 
 class Child extends Parent {
-    // void display() {} ❌ Error: Cannot override
+    // void display() {}  Error: Cannot override
 }
 
