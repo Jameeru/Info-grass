@@ -5,59 +5,33 @@ public class Q1 {
 
         Queue<String> queue = new LinkedList<>();
 
-        queue.offer("Chennai");
-        queue.offer("Mumbai");
-        queue.offer("Delhi");
-        System.out.println("Queue after offer(): " + queue);
+        queue.add("Chennai");
+        queue.add("Mumbai");
+        queue.add("Delhi");
+        System.out.println("Queue after add(): " + queue);
 
         queue.add("Kolkata");
         System.out.println("Queue after add(): " + queue);
 
-        System.out.println("peek(): " + queue.peek());
+        System.out.println("peek(): " + queue.peek());//Top view
 
-        // element() in try-catch: throws exception if queue is empty
-        try {
-            System.out.println("element(): " + queue.element());
-        } catch (NoSuchElementException e) {
-            System.out.println("element(): Queue is empty!");
-        }
 
-       //return null
-        System.out.println("poll(): " + queue.poll());
+        System.out.println("poll(): " + queue.poll());//delete the peek element
+
         System.out.println("Queue after poll(): " + queue);
 
-        // remove() throws exception if queue is empty
-        try {
-            System.out.println("remove(): " + queue.remove());
-        } catch (NoSuchElementException e) {
-            System.out.println("remove(): Queue is empty!");
-        }
-        System.out.println("Queue after remove(): " + queue);
+        System.out.println("Is queue empty? " + queue.isEmpty());//Boolean
 
-        System.out.println("Is queue empty? " + queue.isEmpty());
-
-        System.out.println("Size of queue: " + queue.size());
+        System.out.println("Size of queue: " + queue.size());//gives the size of queue
 
         queue.clear();
+
         System.out.println("Queue after clear(): " + queue);
 
-        // peek()  empty queue  returns null
         System.out.println("peek() on empty queue: " + queue.peek());
 
-        // poll()  empty queue  returns null
+
         System.out.println("poll() on empty queue: " + queue.poll());
 
-        //  element() and remove()  empty queue again
-        try {
-            System.out.println("element() on empty queue: " + queue.element());
-        } catch (NoSuchElementException e) {
-            System.out.println("element() on empty queue: Queue is empty!");
-        }
-
-        try {
-            System.out.println("remove() on empty queue: " + queue.remove());
-        } catch (NoSuchElementException e) {
-            System.out.println("remove() on empty queue: Queue is empty!");
-        }
     }
 }

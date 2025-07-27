@@ -9,7 +9,7 @@ public class Pdeq {
         q1.add(3);
         q1.add(2);
 
-        // PriorityQueue with reverse order (q2)
+        // Priorityqueue with reverse order (q2)
         PriorityQueue<Integer> q2 = new PriorityQueue<>(Collections.reverseOrder());
         q2.add(1);
         q2.add(3);

@@ -12,7 +12,7 @@ public class Sta1 {
         System.out.println("Stack after push(): " + stack);
 
 
-        System.out.println("Top element (peek()): " + stack.peek());
+        System.out.println("Top element peek() : " + stack.peek());
 
 
         System.out.println("Popped element: " + stack.pop());

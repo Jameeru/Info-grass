@@ -28,7 +28,7 @@ public class Student {
         this.m3 = m3;
     }
 
-    @Override
+
     public String toString() {
 
         return name + " " + m1 + " " + m2 + " " + m3;
@@ -50,7 +50,8 @@ public class Student {
 
         System.out.println(map);
 
-        //  Students with average > 60%
+
+        //  Students with average > 60
         List<Student> avg = map.values().stream()
                 .flatMap(List::stream)
                 .filter(s -> IntStream.of(s.m1, s.m2, s.m3).average().getAsDouble() > 60)
