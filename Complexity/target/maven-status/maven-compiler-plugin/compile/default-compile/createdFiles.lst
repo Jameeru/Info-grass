@@ -1,0 +1,11 @@
+com/example/entity/Product.class
+com/example/entity/Brand.class
+com/example/entity/Category.class
+com/example/App.class
+com/example/entity/ProductReview.class
+com/example/util/HibernateUtil.class
+com/example/entity/User.class
+com/example/entity/Wishlist.class
+com/example/entity/OrderItem.class
+com/example/entity/WishlistItem.class
+com/example/entity/Order.class

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ecommerce1?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Shain@0102</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+
+        <!-- Entity mappings -->
+        <mapping class="com.example.entity.User"/>
+        <mapping class="com.example.entity.Category"/>
+        <mapping class="com.example.entity.Brand"/>
+        <mapping class="com.example.entity.Product"/>
+        <mapping class="com.example.entity.Order"/>
+        <mapping class="com.example.entity.OrderItem"/>
+        <mapping class="com.example.entity.Wishlist"/>
+        <mapping class="com.example.entity.WishlistItem"/>
+        <mapping class="com.example.entity.ProductReview"/>
+    </session-factory>
+</hibernate-configuration>
